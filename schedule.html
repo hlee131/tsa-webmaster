@@ -11,7 +11,7 @@
     <title>Schedule</title>
   </head>
   <body>
-    <nav class="h-14 top-0">
+    <nav class="h-1/12 top-0 fixed w-screen">
       <ul
         class="w-full bg-indigo-600 flex flex-row justify-center items-center text-white opacity-75"
       >
@@ -50,20 +50,10 @@
         </li>
       </ul>
     </nav>
-    <div>
-      <div class="float-right h-5/6 w-1/2">
-        <!-- SOURCE: https://unsplash.com/photos/l-NIPb-9Njg -->
-        <img
-          src="https://images.unsplash.com/photo-1584467735867-4297ae2ebcee?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=649&q=80"
-          alt="Doctor in white lab coat and mask with stethoscope around neck"
-          class="h-5/6 m-2 mx-auto"
-        />
-      </div>
-      <div
-        class="float-left p-4 flex flex-col items-center justify-content w-1/2"
-      >
+    <div class="mt-16 h-11/12 flex flex-row items-center justify-center">
+      <div class="p-4 flex flex-col items-center justify-content w-3/5">
         <h1 class="text-3xl font-semibold m-2">Schedule</h1>
-        <table class="table-auto text-center">
+        <table class="table-auto w-full text-center">
           <thead>
             <tr>
               <th></th>
@@ -181,6 +171,14 @@
         </table>
         <h3 class="text-2xl font-semibold m-4">Book An Appointment Today!</h3>
         <button class="bg-green-400 p-2 rounded-md text-xl">Book Now!</button>
+      </div>
+      <div class="w-2/5 p-6">
+        <!-- SOURCE: https://unsplash.com/photos/l-NIPb-9Njg -->
+        <img
+          src="https://images.unsplash.com/photo-1584467735867-4297ae2ebcee?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=649&q=80"
+          alt="Doctor in white lab coat and mask with stethoscope around neck"
+          class="mx-auto"
+        />
       </div>
     </div>
   </body>
