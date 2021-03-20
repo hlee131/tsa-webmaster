@@ -1,9 +1,7 @@
-const apiDomain = '';
-
 document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('signin-form').onsubmit = (e) => {
         e.preventDefault();
-        fetch(apiDomain + '/login', {
+        fetch('/login', {
             method: 'POST',
             body: {
                 email: e.target.getElementById('email').value,
@@ -30,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.getElementById('signup-form').onsubmit = (e) => {
         e.preventDefault();
-        fetch(apiDomain + '/register', {
+        fetch('/register', {
             method: 'POST',
             body: {
                 email: e.target.getElementById('email').value,

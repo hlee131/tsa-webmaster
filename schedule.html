@@ -16,16 +16,16 @@
                 class="w-full bg-indigo-600 flex flex-row justify-center items-center text-white opacity-75"
             >
                 <li class="m-4 text-xl">
-                    <a href="/tsa-webmaster/index.html">Home</a>
+                    <a href="/index.html">Home</a>
                 </li>
                 <li class="m-4 text-xl">
-                    <a href="/tsa-webmaster/schedule.html">Schedule</a>
+                    <a href="/schedule.html">Schedule</a>
                 </li>
                 <li class="m-4 text-xl">
-                    <a href="/tsa-webmaster/specialists.html">Specialists</a>
+                    <a href="/specialists.html">Specialists</a>
                 </li>
                 <li class="m-4 text-xl">
-                    <a href="/tsa-webmaster/about.html">About</a>
+                    <a href="/about.html">About</a>
                 </li>
                 <li class="absolute self-center right-0 m-2">
                     <svg
@@ -40,7 +40,7 @@
                         />
                     </svg>
                     <a
-                        href="/tsa-webmaster/creds.html"
+                        href="/creds.html"
                         class="cursor-pointer mr-4"
                         id="login-button"
                         >Login</a
@@ -54,7 +54,21 @@
                 id="schedule"
             >
                 <h1 class="text-3xl font-semibold m-2">Schedule</h1>
-                <table class="table-auto w-full text-center">
+                <select id="ne-which-doctor">
+                    <option>Dr. John Doe</option>
+                    <option>Dr. John Doe</option>
+                    <option>Dr. Homer Harris</option>
+                    <option>Dr. Raul Grant</option>
+                    <option>Dr. Gladys Ortega</option>
+                    <option>Dr. Belinda Jones</option>
+                    <option>Dr. Luke Owens</option>
+                    <option>Dr. Evelyn Flores</option>
+                    <option>Dr. Tommy Gross</option>
+                    <option>Dr. Gail Wilkins</option>
+                    <option>Dr. Steve Hoffman</option>
+                    <option>Dr. Edna Howard</option>
+                </select>
+                <table class="table-auto w-full text-center" id="no-edit">
                     <thead>
                         <tr>
                             <th></th>
@@ -275,6 +289,7 @@
                 <h3 class="text-2xl font-semibold m-4">
                     Book An Appointment Today!
                 </h3>
+
                 <button
                     class="bg-green-400 p-2 rounded-md text-xl"
                     id="book-now"
@@ -287,7 +302,7 @@
                 id="book"
             >
                 <h1 class="text-3xl font-semibold m-2">Booking Form</h1>
-                <table class="m-2 table-auto w-full text-center">
+                <table class="m-2 table-auto w-full text-center" id="yes-edit">
                     <thead>
                         <tr>
                             <th></th>
@@ -515,7 +530,7 @@
                         name="reason"
                     /><br />
                     <label for="doctor">Doctor:</label>
-                    <select name="doctor" id="doctor">
+                    <select name="doctor" id="ye-which-doctor">
                         <option>Dr. John Doe</option>
                         <option>Dr. John Doe</option>
                         <option>Dr. Homer Harris</option>
